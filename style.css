@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #dcc9f4;
+
+    margin-top: 20px ;  
+}
+
+ 
+.top-child{
+    width: 20%;
+    background-color: #ffd9df;
+
+
+    margin-left: 5px;
+}
+
+
+/* second  */
+
+
+#middle{
+    margin: auto;
+    display: flex;
+
+    /* move for child01 */
+    position: relative;
+    
+    width: 800px;
+    height: 800px;
+    top:20px;
+    background-color: #ffd9df;
+}
+#middle-child01{
+    width: 200px;
+    height: 200px; 
+
+   /* move fordword 100px */
+    position: relative;
+    top:100px;
+    left:100px;
+
+    background-color: #87ceeb;
+}
+
+#middle-child02{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+
+    /* move ３００px for depend child02 position */
+    position: absolute;
+    
+    top:300px;
+    left:300px;
+
+}
+
+#middle-child03{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 133, 223);
+
+    /**** depend child-02 move 500px forword ****/
+    position: absolute;
+    
+    top:500px;
+    left:500px;
+}
+
+/*****
+        一番下の図形を作成 
+ ****/
+
+ #bottom{
+    margin: auto;
+    width: 800px;
+    height: 300px;
+    background-color: #87ceeb;
+    margin-top: 100px;
+
+
+ }
+
+#bottom-child01{
+    width: 400px;
+    height: 100px;
+    background-color: #ec5cf0;
+
+}
+#bottom-child02{
+
+    width: 400px;
+    height: 100px;
+    background-color: #ec5cf0;
+    position: relative;
+    left:200px
+
+}
+
+#bottom-child03{
+
+    width: 400px;
+    height: 100px;
+    background-color: #ec5cf0;
+    position: relative;
+    left: 400px;
+
+}
